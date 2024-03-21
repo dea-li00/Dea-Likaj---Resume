@@ -7,25 +7,26 @@ body {
 h1 {
     font-size: 3em;
     letter-spacing: .6em;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    /* padding-top: 1em; */
+    /* padding-bottom: 1em; */
 }
 
 h2 {
     font-size: 1.5em;
-    padding-bottom: 1em;
+    /* padding-bottom: 1em; */
 }
 
 h3 {
-    font-size: 1em;
-    padding-bottom: 1em;
+    font-size: 1.2em;
+    /* padding-bottom: 1em; */
+    font-weight: bold;
 }
 
-main { 
-    display: grid;
-    grid-template-columns: 40% 60%;
-    margin-top: 3em;
+main {
+    display: flex; /* Change display property to flex */
+    flex-direction: column; /* Stack the columns vertically */
 }
+
 header {
     text-align: center;
     margin: auto 2em;
@@ -53,6 +54,22 @@ h1, h2, h3 {
     font-weight: 100;
     margin-bottom: 0;
 }
-#mainLeft {
-    border-right: 1px solid lightgray;
+
+#mainRight {
+    width: 100%; /* Make the mainRight section cover the entire width */
 }
+
+#mainRight section {
+    /* text-align: center; Center align the content within each section */
+    width: 90%; /* Make each section cover the entire width of its container */
+    margin: 0 auto; /* Center the sections horizontally */
+    max-width: 1000px; /* Optionally, set a maximum width for better readability on larger screens */
+}
+
+#grayhighlighter {
+    background-color: #f2f2f2; /* Set the background color to gray */
+    padding: 2em; /* Add some padding for spacing */
+    text-align: center;
+}
+
+
